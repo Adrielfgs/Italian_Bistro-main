@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Italian Bistro</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Adicionando fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Pacifico?query=paci" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('pyWGtLJ8CMLDCfmxv');
+        })();
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo-navbar" src="imgs/logo/logo_site_bannerprincipal.png">
+
+        <div class="navbar-links">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="menu.html">Menu</a>
+            <a class="navbar-item" href="carrinho.html">Carrinho</a>
+            <a class="active navbar-item" href="contato.html">Contato</a>
+
+        </div>
+    </nav>
+
+    <div class="Container">
+        <img src="imgs/contato/imagem_banner_contato.jpg" alt="Banner Home" class="banner">
+
+        <div class="on-image">
+            <p class="center">Contato</p>
+        </div>
+    </div>
+
+    <div class="col" style="justify-content: space-around;">
+        <div class="infos">
+            <h1 class="yellow-cursive-font">Endereço</h1>
+            <hr>
+            <p class="default-font">
+                <br><br>
+                José Paulino, 1369 | Centro <br>
+                Centro | Campinas - SP <br>
+                19.99999-9999 <br><br>
+                Contato@italianbistro.com <br><br>
+            </p>
+
+            <h1 class="yellow-cursive-font">Funcionamento</h1>
+            <hr>
+            <p class="default-font">
+                <br><br>
+                SEGUNDA A QUINTA: <br>
+                10h às 15h | 18h às 22h <br>
+                <br>
+                SEXTA e SÁBADO <br>
+                10 às 16h | 17 às 00h <br>
+                <br>
+                DOMINGO <br>
+                10h às 16h <br>
+                <br>
+            </p>
+        </div>
+
+
+        <div class="forms" style="padding: 2%">
+            <h1 class="default-font">Fale Conosco</h1>
+            <hr>
+            <hr>
+            <form action="#contato.html">
+                <div>
+                    <input type="text" placeholder="NOME" id="name">
+                </div>
+                <div>
+                    <input type="tel" id="telephone" placeholder="TELEFONE">
+                </div>
+                <div>
+                    <input type="text" id="subject" placeholder="ASSUNTO">
+                </div>
+                <div>
+                    <textarea style="height:200px;" id="msg" placeholder="MENSAGEM"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" onclick="submitMesssage()">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="col colA">
+            <h1 class="default">SOBRE NÓS</h1>
+            <hr style="border-color: black; margin-bottom: 2%; margin-top: 0;">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est id convallis dapibus. Fusce
+                magna
+                lacus, semper eget ullamcorper quis, ornare non sem. Cras id faucibus diam. Interdum et malesuada fames
+                ac ante
+                ipsum primis in faucibus.</p>
+        </div>
+
+        <div class="col colB">
+            <img src="imgs/logo/logo_site_rodape.png" alt="Logo Restaurante" style="width: 200px;">
+            <p class="default-font" style="text-align: center;">
+                José Paulino, 1369 | Centro <br>
+                Campinas - SP <br>
+                19.99999-9999 <br>
+                Contato@italianbistro.com
+            </p>
+        </div>
+        <div class="col colC">
+            <p class="default-font" style="text-align: end;">
+                SEGUNDA A QUINTA: <br>
+                10h às 15h | 18h às 22h <br>
+                <br>
+                SEXTA e SÁBADO <br>
+                10 às 16h | 17 às 00h <br>
+                <br>
+                DOMINGO <br>
+                10h às 16h <br>
+                <br>
+            </p>
+            <div>
+                <img class="icons" src="icons/icones_facebook_preto.png" alt="">
+                <img class="icons" src="icons/icones_instragram_preto.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
