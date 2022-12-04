@@ -38,7 +38,6 @@ body {
         padding-left: 8px;
         margin-top: 5px;
         border: solid 1px #ffcc80;
-        margin-bottom: 15px;
         border: solid .15px #ff9b05;
         border-radius: 5px;
         box-sizing: border-box;
@@ -122,6 +121,10 @@ body {
         border-radius: 10px;
         margin-left: 20px;
         margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     button:active {
@@ -137,7 +140,7 @@ body {
         display: none;
         padding: 1px 8px;
         font-size: 12px;
-        margin-top: -10px;
+        margin-top: 5px;
         border-radius: 5px;
     } 
     .error2 {
@@ -186,7 +189,6 @@ body {
         border: 0;
         padding-left: 8px;
         margin-top: 5px;
-        margin-bottom: 15px;
         border: solid 1.5px #ff9b05;
         border-radius: 5px;
         box-sizing: border-box;
@@ -281,6 +283,9 @@ body {
         border-radius: 10px;
         margin-left: 20px;
         margin-right: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     button:active {
@@ -306,7 +311,6 @@ body {
         display: none;
         padding: 1px 8px;
         font-size: 12px;
-        margin-top: -10px;
         border-radius: 5px;
     } 
     .error2 {

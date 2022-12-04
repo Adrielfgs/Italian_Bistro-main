@@ -83,3 +83,7 @@ const form = {
     passwordRequiredError: () => document.getElementById('password-required-error'),
     registerButton: () => document.getElementById('register-button')
 }
+
+function log() {
+    window.location.href = "/index.html";
+}
