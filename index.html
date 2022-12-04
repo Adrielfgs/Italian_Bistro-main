@@ -8,6 +8,10 @@
     <title>Italian Bistrô</title>
 </head>
 
+<!-- <div class="loading">
+    <label>Carregando...</label>
+</div> -->
+
 <body>
     <form>
         <div class="cont">
@@ -28,7 +32,7 @@
                 <div class="error2" id="password-required-error">Senha é obrigatória</div>
             </div>
             <div class="reset">
-                <button type="button" id="recover-password-button" disabled="true">Recuperar
+                <button type="button" id="recover-password-button" onclick="recoverpassword()" disabled="true">Recuperar
                     senha</button>
             </div>
             <div class="login">
@@ -39,6 +43,7 @@
             </div>
         </div>
     </form>
+
 </body>
 
 <link rel="stylesheet" href="/styles/login.css">
@@ -48,16 +53,6 @@
 <script src="/src/validations.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-<script>
-    const firebaseConfig = {
-        apiKey: "AIzaSyDChGSJmnRt5s06M9xS6FFGXMyHRHwQFhE",
-        authDomain: "italianbistro-f4489.firebaseapp.com",
-        projectId: "italianbistro-f4489",
-        storageBucket: "italianbistro-f4489.appspot.com",
-        messagingSenderId: "109284658758",
-        appId: "1:109284658758:web:29c7b18b3697554faf0447"
-    };
-    firebase.initializeApp(firebaseConfig);
-</script>
-
+<script src="/firebase-init.js"></script>
+<script src="/src/status.js"></script>
 </html>

@@ -7,6 +7,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 @media (max-width: 450px) {
@@ -16,7 +19,6 @@ body {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding-top: 200px;
     }
 
     label {
@@ -25,7 +27,7 @@ body {
     }
 
     .form-field {
-        width: 200px
+        width: 250px
     }
 
     .form-field input {
@@ -46,7 +48,7 @@ body {
     }
 
     .form-field2 {
-        width: 200px
+        width: 250px
     }
 
     .form-field2 input {
@@ -166,7 +168,6 @@ body {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding-top: 200px;
     }
 
     label {
@@ -186,7 +187,7 @@ body {
         padding-left: 8px;
         margin-top: 5px;
         margin-bottom: 15px;
-        border: solid .15px #ff9b05;
+        border: solid 1.5px #ff9b05;
         border-radius: 5px;
         box-sizing: border-box;
         height: 30px;
@@ -195,6 +196,10 @@ body {
     }
 
     .form-field input:hover {
+        border: solid 1px #ffb546;
+    }
+
+    .form-field2 input:hover {
         border: solid 1px #ffb546;
     }
 
@@ -266,17 +271,6 @@ body {
         color: black;
         margin-top: 10px;
         height: 40px;
-    }
-
-    .bodyLog {
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-image: url(/imgs/login/restaurant2.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
     }
 
     .cont {

@@ -11,8 +11,20 @@ function onChangePassword() {
 function login() {
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
-    ).then(response => {
+    ).then(() => {
         window.location.href = "/pages/home.html";
+    }).catch(error => {
+        alert(getErrorMessage(error));
+    });
+}
+
+function register() {
+    window.location.href = "/register.html";
+}
+
+function recoverPassword() {
+    firebase.auth().sendPasswordResetEmail(form.email().value).then(() => {
+        alert('Email enviado com sucesso');
     }).catch(error => {
         alert(getErrorMessage(error));
     });
@@ -22,11 +34,10 @@ function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
         return "Usuário nao encontrado";
     }
+    if (error.code == "auth/wrong-password") {
+        return "Senha inválida";
+    }
     return error.message;
-}
-
-function register() {
-    window.location.href = "register.html";
 }
 
 function toggleEmailErrors() {

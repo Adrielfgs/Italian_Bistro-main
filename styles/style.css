@@ -8,6 +8,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 * {

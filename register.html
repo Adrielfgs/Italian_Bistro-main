@@ -9,48 +9,55 @@
 </head>
 
 <body>
-    <form>
-        <div class="cont">
-            <div>
-                <h3>Registre-se:</h3>
-                <br>
-            </div>
+    <div class="cont">
+        <form>
             <div class="form-field">
                 <div><label>Email</label></div>
-                <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()">
-                <div class="error" id="email-required-error">Email é obrigatório</div>
-                <div class="error3" id="email-invalid-error">Email é inválido</div>
+                <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id="email" />
+                <div class="error0" id="email-required-error">
+                    Email é obrigatório
+                </div>
+                <div class="error0" id="email-invalid-error">
+                    Email é inválido
+                </div>
             </div>
-            <div class="form-field2">
+            <div class="form-field">
                 <div><label>Senha</label></div>
-                <input type="password" name="password" id="password" placeholder="Senha"
-                    onchange="onChangePassword()" />
-                <div class="error2" id="password-required-error">Senha é obrigatória</div>
+                <input type="password" placeholder="Senha" id="password" onchange="onChangePassword()" />
+                <div class="error0" id="password-required-error">
+                    Senha é obrigatório
+                </div>
+                <div class="error0" id="password-min-length-error">
+                    Senha deve ter pelo menos 6 caracteres
+                </div>
             </div>
-            <div class="register">
-                <button type="button" id="login-button" disabled="true" onclick="register()">Registrar</button>
+            <div class="form-field">
+                <div><label>Confirmar senha</label></div>
+                <input type="password" placeholder="Confirmar senha" id="confirmPassword"
+                    onchange="onChangeConfirmPassword()" />
+                <div class="error0" id="password-doesnt-match-error">
+                    Os dois campos de senha devem ser iguais
+                </div>
             </div>
-        </div>
-    </form>
+            <div class="login">
+                <button type="button" class="solid" onclick="register()" disabled="true" id="register-button"> 
+                    Registrar
+                </button>
+            </div>
+            <div class="reset">
+                <button type="button" class="clear">Ja tenho conta / Login</button>
+            </div>
+        </form>
+    </div>
 </body>
-
 <link rel="stylesheet" href="/styles/login.css">
 <link rel="stylesheet" href="/styles/global.css">
 
-<script src="/src/login.js"></script>
+<script src="/src/register.js"></script>
 <script src="/src/validations.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-<script>
-    const firebaseConfig = {
-        apiKey: "AIzaSyDChGSJmnRt5s06M9xS6FFGXMyHRHwQFhE",
-        authDomain: "italianbistro-f4489.firebaseapp.com",
-        projectId: "italianbistro-f4489",
-        storageBucket: "italianbistro-f4489.appspot.com",
-        messagingSenderId: "109284658758",
-        appId: "1:109284658758:web:29c7b18b3697554faf0447"
-    };
-    firebase.initializeApp(firebaseConfig);
-</script> -->
+<script src="/firebase-init.js"></script>
 
 </html>
