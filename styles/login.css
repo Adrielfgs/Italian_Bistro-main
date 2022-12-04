@@ -27,7 +27,7 @@ body {
     }
 
     .form-field {
-        width: 250px
+        width: 300px
     }
 
     .form-field input {
@@ -47,7 +47,7 @@ body {
     }
 
     .form-field2 {
-        width: 250px
+        width: 300px
     }
 
     .form-field2 input {
@@ -67,11 +67,11 @@ body {
     }
 
     .login {
-        width: 250px
+        width: 300px
     }
 
     .login button {
-        width: 250px;
+        width: 300px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -82,13 +82,13 @@ body {
     }
 
     .reset {
-        width: 250px;
+        width: 300px;
     }
 
     .reset button {
         background: none;
         border: 0;
-        width: 250px;
+        width: 300px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -97,11 +97,11 @@ body {
     }
 
     .register {
-        width: 250px
+        width: 300px
     }
 
     .register button {
-        width: 250px;
+        width: 300px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
