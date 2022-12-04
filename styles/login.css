@@ -12,7 +12,7 @@ body {
     justify-content: center
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
 
     form {
         display: flex;
@@ -67,11 +67,11 @@ body {
     }
 
     .login {
-        width: 200px
+        width: 250px
     }
 
     .login button {
-        width: 200px;
+        width: 250px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -82,13 +82,13 @@ body {
     }
 
     .reset {
-        width: 200px;
+        width: 250px;
     }
 
     .reset button {
         background: none;
         border: 0;
-        width: 200px;
+        width: 250px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -97,11 +97,11 @@ body {
     }
 
     .register {
-        width: 200px
+        width: 250px
     }
 
     .register button {
-        width: 200px;
+        width: 250px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -164,7 +164,7 @@ body {
     } 
 }
 
-@media (min-width: 450px) {
+@media (min-width: 460px) {
 
     form {
         display: flex;
@@ -179,7 +179,7 @@ body {
     }
 
     .form-field {
-        width: 300px
+        width: 400px
     }
 
     .form-field input {
@@ -206,7 +206,7 @@ body {
     }
 
     .form-field2 {
-        width: 300px
+        width: 400px
     }
 
     .form-field2 input {
@@ -225,11 +225,11 @@ body {
     }
 
     .login {
-        width: 300px
+        width: 400px
     }
 
     .login button {
-        width: 300px;
+        width: 400px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -241,13 +241,13 @@ body {
     }
 
     .reset {
-        width: 300px;
+        width: 400px;
     }
 
     .reset button {
         background: none;
         border: 0;
-        width: 300px;
+        width: 400px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
         padding: 5px;
@@ -259,11 +259,11 @@ body {
     }
 
     .register {
-        width: 300px
+        width: 400px
     }
 
     .register button {
-        width: 300px;
+        width: 400px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
         padding: 5px;
