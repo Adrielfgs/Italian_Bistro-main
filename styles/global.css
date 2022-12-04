@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.3;
+    cursor: auto;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register {
+    margin-top: 10px;
+}
+
+.register button {
+    width: 300px;
+    height: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #ffcc80;
+    border: 0;
+    color: black;
+}
