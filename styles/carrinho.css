@@ -24,16 +24,61 @@ body {
     right: 0;
 } */
 
+.logo-navbar {
+    width: 100px;
+}
+
 header {
     position: fixed;
     width: 100%;
     height: 60px;
-    background-color: #d32f2f;
-    display: flex;
-    /* none; */
+    /* background-color: #d32f2f;
     justify-content: space-between;
-    /* flex-end; */
+    align-items: center; */
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+}
+
+.navbar-item {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-items: center;
+}
+
+.navbar-links a.active {
+    background-color: #ffcc80;
+    color: black;
+}
+
+.navbar-links a:hover {
+    background-color: #ddd;
+    color: black
+}
+
+.navbar-links button {
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
 }
 
 header h1 {
@@ -44,7 +89,8 @@ header h1 {
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
-    background-color:white;
+    background-color: #ffcc80;
+    color: black;
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
