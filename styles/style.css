@@ -11,15 +11,15 @@
     align-items: center;
 }
 
-.navbar button{
+.navbar button {
     cursor: pointer;
     width: 50px;
     height: 40px;
     background-color: white;
     border: 0;
     margin-right: 10px;
-    margin-left: 5px;
     margin-top: 3px;
+    border-radius: 5px;
 }
 
 * {
@@ -66,18 +66,44 @@ html {
     height: 50em;
 }
 
-.Container {
+.Container1 {
+    background-image: url(/imgs/home/imagem_banner_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-}
-
-.on-image {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50em;
+}
+
+.Container2 {
+    background-image: url(/imgs/menu/imagem_banner_menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50em;
+}
+
+.Container3 {
+    background-image: url(/imgs/contato/imagem_banner_contato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50em;
+}
+
+.on-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-img {
@@ -350,4 +376,21 @@ input:focus, textarea:focus {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.menu-openner {
+    margin-right: 15px;
+    font-size: 26px;
+    background-color:white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }

@@ -73,3 +73,10 @@ h3 {
 .space {
     margin-top: 10px;
 }
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}

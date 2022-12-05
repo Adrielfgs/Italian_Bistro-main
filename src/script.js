@@ -154,7 +154,9 @@ const form = {
     password: () => document.getElementById('password'),
 }
 
-
+function carrinho(){
+    window.location.href = "/pages/carrinho.html"
+}
 
 
 

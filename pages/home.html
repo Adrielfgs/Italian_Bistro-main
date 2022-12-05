@@ -28,15 +28,13 @@
     <div class="navbar-links">
       <a class="active navbar-item" href="home.html">Home</a>
       <a class="navbar-item" href="menu.html">Menu</a>
-      <a class="navbar-item" href="carrinho.html">Carrinho</a>
       <a class="navbar-item" href="contato.html">Contato</a>
+      <div class="menu-openner" onclick="carrinho()" ><span> 0 </span>🛒</div>
       <button onclick="logout()">Sair</button>
     </div>
   </nav>
 
-  <div class="Container">
-    <img src="/imgs/home/imagem_banner_home.jpg" alt="Banner Home" class="banner">
-
+  <div class="Container1">
     <div class="on-image">
       <img src="/imgs/logo/logo_site_bannerprincipal.png" alt="Logo" class="center-img">
       <p class="center"> VIVA UMA NOVA EXPERIÊNCIA CASTRÔNIMICA</p>
@@ -156,5 +154,6 @@
 <script src="/firebase-init.js"></script>
 <script src="/src/home.js"></script>
 <script src="/src/guard.js"></script>
+<script src="/src/script.js"></script>
 
 </html>
