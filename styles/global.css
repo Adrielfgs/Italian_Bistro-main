@@ -21,7 +21,7 @@ button:active {
 }
 
 button[disabled] {
-    opacity: 0.3;
+    opacity: 0.2;
     cursor: auto;
 }
 
@@ -57,19 +57,6 @@ h3 {
     border-radius: 5px;
 }
 
-.login2 button {
-    width: 200px;
-    height: 40px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 12px;
-    padding: 5px;
-    cursor: pointer;
-    background-color: #ffcc80;
-    border: 0;
-    margin-top: 15px;
-    border-radius: 5px;
-}
-
 .space {
     margin-top: 10px;
 }
@@ -79,4 +66,17 @@ nav {
     left: 0;
     top: 0;
     right: 0;
+}
+
+.login2 button {
+    width: 300px;
+    height: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #ffcc80;
+    border: 0;
+    margin-top: 15px;
+    border-radius: 5px;
 }

@@ -8,22 +8,52 @@ body {
     background-repeat: no-repeat;
     backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center
 }
 
 @media (max-width: 460px) {
 
+    .top {
+        width: 0;
+        height: 0;
+    }
+
+    .top img {
+        width: 0;
+        height: 0;
+    }
+
+    .top2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        background-image: url(/imgs/login/restaurant2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: url(filters.svg#filter) blur(2px) saturate(150%);
+        margin-bottom: 20px;
+    }
+
+    .top2 img {
+        width: 250px;
+    }
+
     form {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: white;
     }
 
     label {
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .form-field {
@@ -31,7 +61,7 @@ body {
     }
 
     .form-field input {
-        font-size: 11px;
+        font-size: 14px;
         width: 100%;
         background-color: white;
         border: 0;
@@ -51,7 +81,7 @@ body {
     }
 
     .form-field2 input {
-        font-size: 11px;
+        font-size: 4;
         width: 100%;
         background-color: white;
         border: 0;
@@ -71,6 +101,7 @@ body {
     }
 
     .login button {
+        color: black;
         width: 300px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
@@ -79,6 +110,7 @@ body {
         cursor: pointer;
         background-color: #ffcc80;
         border: 0;
+        border-radius: 5px;
     }
 
     .reset {
@@ -86,6 +118,7 @@ body {
     }
 
     .reset button {
+        color: black;
         background: none;
         border: 0;
         width: 300px;
@@ -93,7 +126,7 @@ body {
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
         padding: 5px;
-        cursor: pointer
+        cursor: pointer;
     }
 
     .register {
@@ -111,6 +144,7 @@ body {
         border: solid 1px #ffcc80;
         color: black;
         margin-top: 10px;
+        border-radius: 5px;
     }
 
     .cont {
@@ -127,13 +161,6 @@ body {
         align-items: center;
     }
 
-    button:active {
-        opacity: 0.8;
-    }
-
-    button[disabled] {
-        opacity: 0.8;
-    }
     .error {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -142,7 +169,8 @@ body {
         font-size: 12px;
         margin-top: 5px;
         border-radius: 5px;
-    } 
+    }
+
     .error2 {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -151,7 +179,8 @@ body {
         font-size: 12px;
         margin-top: 5px;
         border-radius: 5px;
-    } 
+    }
+
     .error3 {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -161,10 +190,22 @@ body {
         margin-top: 5px;
         margin-bottom: 10px;
         border-radius: 5px;
-    } 
+    }
 }
 
 @media (min-width: 460px) {
+
+    .top {
+        margin-bottom: 20px;
+    }
+
+    .top img {
+        width: 300px;
+    }
+
+    .top2 img {
+        width: 0;
+    }
 
     form {
         display: flex;
@@ -179,11 +220,11 @@ body {
     }
 
     .form-field {
-        width: 400px
+        width: 300px
     }
 
     .form-field input {
-        font-size: 13px;
+        font-size: 14px;
         width: 100%;
         background-color: white;
         border: 0;
@@ -206,11 +247,11 @@ body {
     }
 
     .form-field2 {
-        width: 400px
+        width: 300px
     }
 
     .form-field2 input {
-        font-size: 13px;
+        font-size: 14px;
         width: 100%;
         background-color: white;
         border: 0;
@@ -225,11 +266,11 @@ body {
     }
 
     .login {
-        width: 400px
+        width: 300px
     }
 
     .login button {
-        width: 400px;
+        width: 300px;
         height: 40px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
@@ -238,16 +279,17 @@ body {
         background-color: #ffcc80;
         border: 0;
         color: black;
+        border-radius: 5px;
     }
 
     .reset {
-        width: 400px;
+        width: 300px;
     }
 
     .reset button {
         background: none;
         border: 0;
-        width: 400px;
+        width: 300px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
         padding: 5px;
@@ -259,11 +301,11 @@ body {
     }
 
     .register {
-        width: 400px
+        width: 300px
     }
 
     .register button {
-        width: 400px;
+        width: 300px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 12px;
         padding: 5px;
@@ -273,6 +315,7 @@ body {
         color: black;
         margin-top: 10px;
         height: 40px;
+        border-radius: 5px;
     }
 
     .cont {
@@ -288,14 +331,6 @@ body {
         align-items: center;
     }
 
-    button:active {
-        opacity: 0.8;
-    }
-
-    button[disabled] {
-        opacity: 0.8;
-    }
-
     .error {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -305,6 +340,7 @@ body {
         margin-top: 5px;
         border-radius: 5px;
     }
+
     .error {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -312,7 +348,8 @@ body {
         padding: 1px 8px;
         font-size: 12px;
         border-radius: 5px;
-    } 
+    }
+
     .error2 {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -321,7 +358,8 @@ body {
         font-size: 12px;
         margin-top: 5px;
         border-radius: 5px;
-    } 
+    }
+
     .error3 {
         background: rgba(255, 0, 0, 0.552);
         color: white;
@@ -331,5 +369,5 @@ body {
         margin-top: 5px;
         margin-bottom: 10px;
         border-radius: 5px;
-    } 
+    }
 }
