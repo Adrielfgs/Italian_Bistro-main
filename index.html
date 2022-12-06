@@ -13,7 +13,13 @@
 </div> -->
 
 <body>
+    <div class="top">
+        <img src="/imgs/logo/logo_site_menu.png" alt="">
+    </div>
     <form>
+        <div class="top2">
+            <img src="/imgs/logo/logo_site_menu.png" alt="">
+        </div>
         <div class="cont">
             <div>
                 <h3>Entre ou registre-se:</h3>
@@ -21,18 +27,18 @@
             </div>
             <div class="form-field">
                 <div class="space"><label>Email</label></div>
-                <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()">
+                <input type="email" name="email" id="email" placeholder="Seu@email.com" onchange="onChangeEmail()">
                 <div class="error" id="email-required-error">Email é obrigatório</div>
                 <div class="error3" id="email-invalid-error">Email é inválido</div>
             </div>
             <div class="form-field2">
                 <div class="space"><label>Senha</label></div>
-                <input type="password" name="password" id="password" placeholder="Senha"
+                <input type="password" name="password" id="password" placeholder="********"
                     onchange="onChangePassword()" />
                 <div class="error2" id="password-required-error">Senha é obrigatória</div>
             </div>
             <div class="reset">
-                <button type="button" id="recover-password-button" onclick="recoverpassword()" disabled="true">Recuperar
+                <button type="button" id="recover-password-button" onclick="recoverPassword()" disabled="true">Recuperar
                     senha</button>
             </div>
             <div class="login">
@@ -55,4 +61,5 @@
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
 <script src="/firebase-init.js"></script>
 <script src="/src/status.js"></script>
+
 </html>
