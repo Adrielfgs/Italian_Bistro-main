@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -79,7 +86,6 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         height: 50em;
     }
 
@@ -392,7 +398,6 @@ html {
     }
 }
 
-
 @media (min-width: 460px) {
 
     .logo-navbar {
@@ -462,7 +467,6 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         height: 50em;
     }
 
