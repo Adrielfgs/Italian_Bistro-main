@@ -1,30 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    /* overflow-y: hidden; */
-}
-
-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-}
-
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 
     .logo-navbar {
         width: 100px;
@@ -127,12 +101,12 @@ nav {
     }
 
     .center-img {
-        width: 18em;
+        width: 25em;
     }
 
     .center {
         text-align: center;
-        font-size: 20px;
+        font-size: 38px;
         color: #ffcc80;
         font-family: 'Noto Sans', sans-serif;
     }
@@ -141,14 +115,13 @@ nav {
         display: flex;
         justify-content: center;
         padding: 5%;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .container4 img {
         border-radius: 10px;
         margin-top: 10px;
-        width: 100%;
     }
 
     .imgs-chef {
@@ -156,11 +129,7 @@ nav {
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        margin-left: 50px;
-    }
-
-    .ass {
-        width: 10px;
+        margin-left: 20px;
     }
 
     .yellow-cursive-font {
@@ -171,21 +140,17 @@ nav {
     .default-font {
         font-family: 'Montserrat Alternates', sans-serif;
         display: flex;
-        font-size: 12px;
-        font-weight: bold;
     }
 
     .master {
         font-family: 'Montserrat Alternates', sans-serif;
         display: flex;
-        font-size: 12px;
-        width: 200px;
+        font-size: 20px;
+        margin-right: 100px;
     }
 
     .default {
         font-family: 'Noto Sans', sans-serif;
-        font-size: 12px;
-        color: black;
     }
 
     hr {
@@ -197,7 +162,7 @@ nav {
         margin-top: 2%;
     }
 
-    .special {
+    .special{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -205,8 +170,7 @@ nav {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-
-    .special2 {
+    .special2{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -221,10 +185,8 @@ nav {
         flex-direction: column;
     }
 
-    /* Celular */
     .dishes {
         display: flex;
-        flex-direction: column;
         align-items: stretch;
         justify-content: center;
         margin: 0px 20px;
@@ -233,9 +195,6 @@ nav {
 
     .dishes img {
         border-radius: 10px;
-        width: 100%;
-        margin-bottom: 10px;
-        margin-top: 20px;
     }
 
     .other {
@@ -253,6 +212,11 @@ nav {
         align-items: center;
     }
 
+    .executivo {
+        padding-bottom: 2%;
+    }
+
+
     .footer {
         background-color: #ffcc80;
         display: flex;
@@ -269,7 +233,7 @@ nav {
     .most-orded {
         width: max-content;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
     }
@@ -283,14 +247,14 @@ nav {
 
     .most-orded-item {
         display: flex;
-        width: 150px;
+        width: 300px;
         flex-direction: column;
         border-radius: 10px;
-        margin: 5px;
+        margin: 15px;
     }
 
     .most-orded-item img {
-        width: 150px;
+        width: 300px;
         border-radius: 10px 10px 0px 0px;
     }
 
@@ -300,7 +264,7 @@ nav {
         font-family: 'Montserrat Alternates', sans-serif;
         color: black;
         cursor: pointer;
-        width: 60%;
+        width: 70%;
         background-color: #ffcc80;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -394,11 +358,10 @@ nav {
     .preco2 {
         background-color: #ffd89f;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 8px;
-        font-weight: bold;
+        font-size: 15px;
         color: rgb(0, 0, 0);
         border-radius: 5px;
-        width: 40%;
+        width: 30%;
         height: 36.5px;
         align-items: center;
         justify-content: center;
@@ -406,28 +369,22 @@ nav {
     }
 
     .container5 {
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+
+    .pratos {
+        width: max-content;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .pratos {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
     .sobre p {
-        font-size: 8px;
+        font-size: 12px;
     }
     .sobre2 {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
     }
 }

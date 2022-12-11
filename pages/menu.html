@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Italian Bistro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
-
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style2.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Adicionando fontes -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/specimen/Pacifico?query=paci" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
         <div class="navbar-links">
             <a class="navbar-item" href="home.html">Home</a>
             <a class="active navbar-item" href="menu.html">Menu</a>
-            <a class="navbar-item" href="contato.html">Contato</a>
+            <!-- <a class="navbar-item" href="contato.html">Contato</a> -->
             <a class="navbar-item" href="carrinho.html">Carrinho</a>
             <button onclick="logout()">Sair</button>
         </div>
@@ -52,110 +53,106 @@
             <h1 class="yellow-cursive-font">Os mais pedidos</h1>
             <h2 class="default">Conheça os carros chefes da casa!</h2>
         </div>
+    </div>
+    <div class="special2">
         <div class="most-orded">
             <div class="most-orded-item">
                 <img src="/imgs/menu/imagem_maispedidos_arancini.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Arancini</h4>
+                    <p class="default-font">Arancini</p>
                     <p class="default">Clássicos bolinhos de risoto. ideal para entradas e inicar sua experiência
                         gastronômica.</p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 37,50</div>
                     <button onclick="carrinho()" id="btn4" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
             <div class="most-orded-item">
                 <img src="/imgs/menu/imagem_maispedidos_carbonara.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Carbonara</h4>
-                    <p class="default">Equilíbrio perfeito entre nossa clássica massa fresca, guanciale, ovos e queijo
+                    <p class="default-font">Carbonara</p>
+                    <p class="default">Equilíbrio perfeito entre nossa clássica massa fresca, guanciale, ovos e
+                        queijo
                         pecorino.</p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 42,00</div>
                     <button onclick="carrinho()" id="btn5" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
-
             <div class="most-orded-item">
                 <img src="/imgs/menu/imagem_maispedidos_tiramisu.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Tiramisu</h4>
-                    <p class="default">Perfeitas camadas de bolacha champagne e café entre o clássico creme mascapone.
+                    <p class="default-font">Tiramisu</p>
+                    <p class="default">Perfeitas camadas de bolacha champagne e café entre o clássico creme
+                        mascapone.
                     </p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 30,00</div>
                     <button onclick="carrinho()" id="btn6" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="special2">
-        <div class="most-orded">
             <div class="most-orded-item">
                 <img src="/imgs/menu/comida-tipica-italia-bisteca-fiorentina.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Bisteca Fiorentina</h4>
+                    <p class="default-font">Bisteca Fiorentina</p>
                     <p class="default">Típica da região da Florença, a Bisteca Fiorentina é uma carne suculenta e
                         saborosa.</p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 54,30</div>
                     <button onclick="carrinho()" id="btn7" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
 
             <div class="most-orded-item">
                 <img src="/imgs/menu/prato-italiano-risoto-gastronomia-1024x576.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Risotto</h4>
+                    <p class="default-font">Risotto</p>
                     <p class="default">Um delicioso arroz cozido com conservas, tomate seco, cebola e abobrinha</p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 39,75</div>
                     <button onclick="carrinho()" id="btn8" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
 
             <div class="most-orded-item">
                 <img src="/imgs/menu/comidas-italianas-ossobuco-prato-origem.jpg" alt="Pratos mais pedidos">
                 <div class="most-orded-item-description">
-                    <h4 class="default-font" style="font-size:larger">Ossobuco</h4>
-                    <p class="default">Escaldado do corte do Músculo com Legumes, vinho tinto e uma pitada de manjericão
+                    <p class="default-font">Ossobuco</p>
+                    <p class="default">Escaldado do corte do Músculo com Legumes, vinho tinto e uma pitada de
+                        manjericão
                     </p>
                 </div>
                 <div class="preco1">
                     <div class="preco2">R$ 45,90</div>
                     <button onclick="carrinho()" id="btn9" data-confirm="" data-iddocumento="189738"
-                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Adicionar ao
-                        carrinho</button>
+                        data-descricao="teste1" type="button" class="btn btn-warning btn-xs 189738">Comprar</button>
                 </div>
             </div>
         </div>
     </div>
-
     <footer class="footer">
-        <div class="col colA">
-          <h1 class="default">SOBRE NÓS</h1>
-          <hr style="border-color: black; margin-bottom: 2%; margin-top: 0;">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est id convallis dapibus. Fusce magna
-            lacus, semper eget ullamcorper quis, ornare non sem. Cras id faucibus diam. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus.</p>
+        <div class="sobre">
+            <h1 class="sobre2">SOBRE NÓS</h1>
+            <hr style="border-color: black; margin-bottom: 2%; margin-top: 0;">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis est id convallis dapibus.
+                Fusce
+                magna
+                lacus, semper eget ullamcorper quis, ornare non sem. Cras id faucibus diam. Interdum et malesuada
+                fames
+                ac ante
+                ipsum primis in faucibus.</p>
         </div>
-      </footer>
+    </footer>
 </body>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
@@ -163,4 +160,15 @@
 <script src="/src/home.js"></script>
 <script src="/src/guard.js"></script>
 <script src="/src/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 </html>
